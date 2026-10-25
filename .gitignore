@@ -1,0 +1,89 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Python bytecode, environments, packaging, and test caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Local configuration and secrets (sanitized templates may be tracked)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Docker local credentials and overrides
+# Keep Dockerfiles and shared Compose files tracked.
+# Add a project-specific .dockerignore when implementing container builds.
+.docker/
+docker-compose.override.yml
+docker-compose.override.yaml
+compose.override.yml
+compose.override.yaml
+
+# Terraform downloaded providers/modules, state, saved plans, and local inputs
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfplan.*
+*.plan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+# Keep .terraform.lock.hcl and sanitized *.tfvars.example files tracked.
+
+# AWS credentials and generated local tool artifacts
+.aws/
+.aws-sam/
+cdk.out/
+
+# Local Kubernetes credentials
+.kube/
+kubeconfig
+kubeconfig.*
+!kubeconfig.example
+
+# Runtime artifacts and local data
+*.log
+*.pid
+.cache/
+*.sqlite
+*.sqlite3
+*.db
